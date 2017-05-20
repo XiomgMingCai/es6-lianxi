@@ -1,5 +1,4 @@
 /*
-/!*
 {
     let list = new Set();
     list.add(5)
@@ -25,8 +24,8 @@
     console.log(new Set(arr));
 
 }
-*!/
-/!*
+*/
+/*
 
 {
     let arr = ['add', 'delete', 'clear', 'has']
@@ -57,7 +56,7 @@
         console.log(item);
     })
 }
-*!/
+*/
 
 {
     let Weakobj = new WeakSet()
@@ -90,7 +89,7 @@
 }
 {
 
-  /!*  var sfs = {
+  /*  var sfs = {
         name:'xiaoming',
         2:23
     }
@@ -99,9 +98,9 @@
     let abc = new Map()
 
     abc.set(2,23)
-    console.log('abc.get'+abc.get(2));*!/
+    console.log('abc.get'+abc.get(2));*/
 
-}*/
+}
 
 {
     let Weak_Map = new WeakMap();
