@@ -1,6 +1,6 @@
 import $ from 'jquery'
 
-export default  class interface {
+class interface {
     /**
      * 获取遗漏
      * @param issue
@@ -72,4 +72,8 @@ export default  class interface {
             })
         })
     }
+}
+
+export default  {
+    interface
 }

@@ -55,12 +55,6 @@
 
 	__webpack_require__(2);
 
-	var _lottery = __webpack_require__(299);
-
-	var _lottery2 = _interopRequireDefault(_lottery);
-
-	function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
-
 /***/ }),
 /* 2 */
 /***/ (function(module, exports, __webpack_require__) {
@@ -8700,26 +8694,6 @@
 	    return String(it).replace(regExp, replacer);
 	  };
 	};
-
-/***/ }),
-/* 299 */
-/***/ (function(module, exports, __webpack_require__) {
-
-	'use strict';
-
-	/*
-	import './lottery/base.js'
-	import './lottery/timer'
-	import './lottery/calculate'
-	import './lottery/interface'*/
-
-	var Nightmare = __webpack_require__(!(function webpackMissingModule() { var e = new Error("Cannot find module \"nightmare\""); e.code = 'MODULE_NOT_FOUND'; throw e; }()));
-	var nightmare = Nightmare({ show: true });
-
-	var run = function run() {
-	    nightmare.goto('http://baidu.com');
-	};
-	run();
 
 /***/ })
 /******/ ]);
