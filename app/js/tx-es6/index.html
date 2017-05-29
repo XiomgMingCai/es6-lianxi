@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <link rel="stylesheet" href="http://oosfr8ich.bkt.clouddn.com/reset.css" type="text/css">
+    <link rel="stylesheet" href="http://oofmq9rym.bkt.clouddn.com/prism_number.css" type="text/css">
+    <style type="text/css">
+        html {
+            background: url(http://bubkoo.com/images/bg.jpg) fixed repeat center top #f0f0f0;
+            font-size: 15px;
+        }
+
+        body {
+            width: 727px;
+            min-height: 800px;
+            padding: 20px 40px;
+            margin-left: auto;
+            margin-right: auto;
+            font-family: 'Source Sans Pro', 'Helvetica Neue', Arial, sans-serif;
+            background-color: #fff;
+        }
+
+        code {
+            font-size: 17px;
+        }
+    </style>
+</head>
+
+<body>
+<header></header>
+
+<section>
+<pre class="line-numbers"><code class="language-js">
+let tasks = [];
+
+for (var i = 0; i < 5; i++) {
+    ((j) => {
+        tasks.push(new Promise(function (resolve, reject) {
+
+            setTimeout(function () {
+                console.log(new Date, j);
+                resolve();
+            }, j * 1000)
+
+        }))
+    })(i)
+
+}
+
+Promise.all(tasks).then(function () {
+    setTimeout(function () {
+        console.log(new Date, i);
+    }, 1000)
+})
+</code></pre>
+</section>
+
+<footer></footer>
+
+<script src="http://oofmq9rym.bkt.clouddn.com/prism_number.js" async></script>
+</body>
+</html>

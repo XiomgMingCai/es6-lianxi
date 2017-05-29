@@ -43,12 +43,25 @@
     let arrow2 = () => 2;
 
     // console.log(arrow2());
+    // es5
+    (function () {
+        console.log(233);
+    })()
+
+
+
+}
+
+{
+    ( () => {
+        console.log(233);
+    })()
 }
 
 {
     //伪调用
     function tail(x) {
-        console.log('tail', x);
+        // console.log('tail', x);
     }
 
     function fx(x) {
@@ -61,7 +74,6 @@
 }
 
 {
-
 
 
 }

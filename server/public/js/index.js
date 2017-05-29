@@ -55,6 +55,12 @@
 
 	__webpack_require__(2);
 
+	var _let = __webpack_require__(299);
+
+	var _let2 = _interopRequireDefault(_let);
+
+	function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
+
 /***/ }),
 /* 2 */
 /***/ (function(module, exports, __webpack_require__) {
@@ -8694,6 +8700,103 @@
 	    return String(it).replace(regExp, replacer);
 	  };
 	};
+
+/***/ }),
+/* 299 */
+/***/ (function(module, exports) {
+
+	"use strict";
+
+	function _asyncToGenerator(fn) { return function () { var gen = fn.apply(this, arguments); return new Promise(function (resolve, reject) { function step(key, arg) { try { var info = gen[key](arg); var value = info.value; } catch (error) { reject(error); return; } if (info.done) { resolve(value); } else { return Promise.resolve(value).then(function (value) { step("next", value); }, function (err) { step("throw", err); }); } } return step("next"); }); }; }
+
+	var sleep = function sleep(time) {
+	    return new Promise(function (resolve, reject) {
+	        setTimeout(function () {
+	            // reject('error')
+	            resolve();
+	        }, time);
+	    });
+	};
+	var start = function () {
+	    var _ref = _asyncToGenerator(regeneratorRuntime.mark(function _callee() {
+	        var 一到十, _iteratorNormalCompletion, _didIteratorError, _iteratorError, _iterator, _step, i;
+
+	        return regeneratorRuntime.wrap(function _callee$(_context) {
+	            while (1) {
+	                switch (_context.prev = _context.next) {
+	                    case 0:
+	                        一到十 = [1, 2, 3, 4, 5, 6, 7, 8, 9, 10];
+	                        _iteratorNormalCompletion = true;
+	                        _didIteratorError = false;
+	                        _iteratorError = undefined;
+	                        _context.prev = 4;
+	                        _iterator = 一到十[Symbol.iterator]();
+
+	                    case 6:
+	                        if (_iteratorNormalCompletion = (_step = _iterator.next()).done) {
+	                            _context.next = 14;
+	                            break;
+	                        }
+
+	                        i = _step.value;
+
+	                        console.log("\u5F53\u524D\u662F\u7B2C" + i + "\u6B21\u7B49\u5F85..");
+	                        _context.next = 11;
+	                        return sleep(1000);
+
+	                    case 11:
+	                        _iteratorNormalCompletion = true;
+	                        _context.next = 6;
+	                        break;
+
+	                    case 14:
+	                        _context.next = 20;
+	                        break;
+
+	                    case 16:
+	                        _context.prev = 16;
+	                        _context.t0 = _context["catch"](4);
+	                        _didIteratorError = true;
+	                        _iteratorError = _context.t0;
+
+	                    case 20:
+	                        _context.prev = 20;
+	                        _context.prev = 21;
+
+	                        if (!_iteratorNormalCompletion && _iterator.return) {
+	                            _iterator.return();
+	                        }
+
+	                    case 23:
+	                        _context.prev = 23;
+
+	                        if (!_didIteratorError) {
+	                            _context.next = 26;
+	                            break;
+	                        }
+
+	                        throw _iteratorError;
+
+	                    case 26:
+	                        return _context.finish(23);
+
+	                    case 27:
+	                        return _context.finish(20);
+
+	                    case 28:
+	                    case "end":
+	                        return _context.stop();
+	                }
+	            }
+	        }, _callee, this, [[4, 16, 20, 28], [21,, 23, 27]]);
+	    }));
+
+	    return function start() {
+	        return _ref.apply(this, arguments);
+	    };
+	}();
+
+	start();
 
 /***/ })
 /******/ ]);
