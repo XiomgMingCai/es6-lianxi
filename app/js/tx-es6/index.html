@@ -7,7 +7,7 @@
     <link rel="stylesheet" href="http://oofmq9rym.bkt.clouddn.com/prism_number.css" type="text/css">
     <style type="text/css">
         html {
-            background: url(http://bubkoo.com/images/bg.jpg) fixed repeat center top #f0f0f0;
+            background: url(http://oo34aq09b.bkt.clouddn.com/bg.jpg) fixed repeat center top #f0f0f0;
             font-size: 15px;
         }
 
@@ -29,32 +29,101 @@
 
 <body>
 <header></header>
-
 <section>
-<pre class="line-numbers"><code class="language-js">
-let tasks = [];
+    <form action="" method="" class="fieldset">
+        <fieldset style="border: none">
+            <legend style="display:none ">登录表单</legend>
+            <p><label for="name"> 账号:</label> <input type="text" id="name"></p>
+            <p><label for="pw"> 密码:</label> <input type="text" id="pw"></p>
+        </fieldset>
+    </form>
+</section>
+<section>
 
-for (var i = 0; i < 5; i++) {
-    ((j) => {
-        tasks.push(new Promise(function (resolve, reject) {
+    <table border="1">
+        <caption>几种页面实现的比较</caption>
+        <thead>
+        <tr>
+            <th>实现方式</th>
+            <th>代码量</th>
+            <th>搜索引擎友好度</th>
+            <th>特殊终端兼容</th>
+        </tr>
+        </thead>
+        <tbody>
+        <tr>
+            <th>table 布局</th>
+            <th>多</th>
+            <th>差</th>
+            <th>一般</th>
+        </tr>
+        <tr>
+            <th>滥用标签的css 布局</th>
+            <th>少</th>
+            <th>一般</th>
+            <th>差</th>
+        </tr>
+        <tr>
+            <th>标签语义良好的布 css局</th>
+            <th>少</th>
+            <th>好</th>
+            <th>好</th>
+        </tr>
+        </tbody>
 
-            setTimeout(function () {
-                console.log(new Date, j);
-                resolve();
-            }, j * 1000)
 
-        }))
-    })(i)
+    </table>
 
-}
+</section>
+<section>
+<pre class="line-numbers"><code class="language-html">
 
-Promise.all(tasks).then(function () {
-    setTimeout(function () {
-        console.log(new Date, i);
-    }, 1000)
-})
+    &lt;form action=&quot;&quot; method=&quot;&quot; class=&quot;fieldset&quot;&gt;
+        &lt;fieldset style=&quot;border: none&quot;&gt;
+            &lt;legend style=&quot;display:none &quot;&gt;登录表单&lt;/legend&gt;
+            &lt;p&gt;&lt;label for=&quot;name&quot;&gt; 账号:&lt;/label&gt; &lt;input type=&quot;text&quot; id=&quot;name&quot;&gt;&lt;/p&gt;
+            &lt;p&gt;&lt;label for=&quot;pw&quot;&gt; 密码:&lt;/label&gt; &lt;input type=&quot;text&quot; id=&quot;pw&quot;&gt;&lt;/p&gt;
+        &lt;/fieldset&gt;
+    &lt;/form&gt;
+
+
+
+     &lt;table border=&quot;1&quot;&gt;
+        &lt;caption&gt;几种页面实现的比较&lt;/caption&gt;
+        &lt;thead&gt;
+        &lt;tr&gt;
+            &lt;th&gt;实现方式&lt;/th&gt;
+            &lt;th&gt;代码量&lt;/th&gt;
+            &lt;th&gt;搜索引擎友好度&lt;/th&gt;
+            &lt;th&gt;特殊终端兼容&lt;/th&gt;
+        &lt;/tr&gt;
+        &lt;/thead&gt;
+        &lt;tbody&gt;
+        &lt;tr&gt;
+            &lt;th&gt;table 布局&lt;/th&gt;
+            &lt;th&gt;多&lt;/th&gt;
+            &lt;th&gt;差&lt;/th&gt;
+            &lt;th&gt;一般&lt;/th&gt;
+        &lt;/tr&gt;
+        &lt;tr&gt;
+            &lt;th&gt;滥用标签的css 布局&lt;/th&gt;
+            &lt;th&gt;少&lt;/th&gt;
+            &lt;th&gt;一般&lt;/th&gt;
+            &lt;th&gt;差&lt;/th&gt;
+        &lt;/tr&gt;
+        &lt;tr&gt;
+            &lt;th&gt;标签语义良好的布 css局&lt;/th&gt;
+            &lt;th&gt;少&lt;/th&gt;
+            &lt;th&gt;好&lt;/th&gt;
+            &lt;th&gt;好&lt;/th&gt;
+        &lt;/tr&gt;
+        &lt;/tbody&gt;
+    &lt;/table&gt;
+
+
 </code></pre>
 </section>
+
 
 <footer></footer>
 
